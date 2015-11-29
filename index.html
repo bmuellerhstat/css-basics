@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Basics</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div id="header">
+            <h1>CSS Basics</h1>
+        </div>
+        <hr>
+
+        <div class="container">
+            <h2>Before You Begin</h2>
+            <p>There are two files:</p>
+            <ul>
+                <li><code>index.html</code> is the content. DO NOT EDIT ANY OF IT.</li>
+                <li><code>style.css</code> is the style. This is where you will be doing your coding.</li>
+            </ul>
+            <p>Follow the directions on this HTML page below.</p>
+        </div>
+        <hr>
+
+        <div class="container">
+            <h2>The Wrapper</h2>
+            <p>You'll notice that <code>&lt;div class="wrapper"&gt;</code> has already been styled for you. Don't worry too much about the declarations inside that rule, but feel free to turn each declaration off/on to see what they do.</p>
+        </div>
+        <hr>
+
+        <div class="container">
+            <h2>The Horizontal Rules</h2>
+            <p>Let's start simple. Just copy and paste the code snippet below to style all of the <code>&lt;hr&gt;</code> elements.</p>
+            <div class="snippet">
+                <code>
+                hr {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;border: 0;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;height: 1px;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;background: #333;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;background-image: linear-gradient(to right, #ccc, #333, #ccc);<br>
+                }
+                </code>
+            </div>
+            <p>Subtle, but awesome. Right?</p>
+        </div>
+        <hr>
+
+        <div class="container">
+            <h2>The Headings</h2>
+            <p>Select all <code>&lt;h1&gt;</code> elements.</p>
+            <ul>
+                <li>Set the <code>font-size</code> to <code>72px</code></li>
+            </ul>
+            <p>In a new rule, select all <code>&lt;h1&gt;</code> and <code>&lt;h2&gt;</code> elements at the same time.</p>
+            <ul>
+                <li>Set the <code>font-family</code> to <code>"Oswald", "Helvetica Neue"</code></li>
+                <ul>
+                    <li>This means that the font will be <code>Oswald</code> (an imported font, more on that later), and <code>Helvetica Neue</code> is the closest backup in case <code>Oswald</code> doesn't load.</li>
+                    <li>Fonts only need to be surrounded with quotes if they are multiple words, such as <code>"Times New Roman"</code>, but it's a good habit to surround all fonts with quotes, just in case.</li>
+                </ul>
+                <li>Set the <code>text-align</code> property to <code>center</code></li>
+                <li>Set the <code>color</code> to <code>#2884C3</code></li>
+            </ul>
+            <p>Starting to look familiar?</p>
+        </div>
+        <hr>
+
+        <div class="container">
+            <h2>Text</h2>
+            <p>Remember that everything in <code>&lt;HTML&gt;</code> is either in the <code>&lt;head&gt;</code> or <code>&lt;body&gt;</code></p>
+            <p>We can select <strong>all</strong> text by selecting the <code>&lt;body&gt;</code></p>
+            <ul>
+                <li>and setting the <code>font-size</code> to <code>1.5em</code></li>
+                <ul>
+                    <li><code>em</code> means <strong>emphasis</strong> and simply multiplies the current font size by your # (in this case, 1.5).</li>
+                </ul>
+            </ul>
+            <p>This declaration just applied to everything in the <code>body</code> that has a <code>font-size</code> (namely, text - such as <code>p</code>, <code>li</code>, <code>h2</code>, etc.)</p>
+            <p>But why aren't <code>&lt;h1&gt;</code> elements affected? Remember that rules <strong>cascade</strong>, meaning that <code>h1</code> is more specific than <code>body</code>, so <code>h1</code> declarations overrule any <code>body</code> declarations.</p>
+            <p>I'm not a big fan of the font, so let's change the font family, too. Similar to the <code>&lt;h1&gt;</code> and <code>&lt;h2&gt;</code> elements, one has already been imported for you.</p>
+            <ul>
+                <li>set the <code>font-family</code> to <code>"Crimson Text", "Arial"</code></li>
+            </ul>
+            <p>But now the text seems to squished together, right? We can space out each line by</p>
+            <ul>
+                <li>setting the <code>line-height</code> to <code>1.5</code></li>
+            </ul>
+
+        </div>
+        <hr>
+
+        <div class="container">
+            <h2>Code</h2>
+            <p>Select all <code>&lt;code&gt;</code> elements.</p>
+            <ul>
+                <li>Set the <code>color</code> to <code>#CE234C</code></li>
+            </ul>
+            <p>Did you know you can use words, too? Try it!</p>
+            <ul>
+                <li>Set the <code>background-color</code> to <code>lightgray</code></li>
+            </ul>
+            <p>By doing this, hopefully you noticed that everything looks good, except for that code snippet above! How can we make the entire background of that code gray? We'd have to put it in a container (think: <code>div</code>) and make the entire
+                container have a gray background. The HTML part has been done for you. And in case we want to do a code snippet again, the div has <code>class="snippet"</code></p>
+            <p>So select all elements with that class.</p>
+            <ul>
+                <li>Set the <code>background</code> to <code>lightgray</code></li>
+            </ul>
+        </div>
+        <hr>
+
+        <div class="container">
+            <h2>Fonts</h2>
+            <p>Ok, it's time to start taking off the training wheels.</p>
+            <p>Make the text below look exactly like the image that follows. </p>
+            <ul>
+                <li>You'll need to select that element by its ID.</li>
+                <li>You'll also need to figure out how to make text <a href="http://www.tutorialrepublic.com/css-tutorial/css-fonts.php" target="_blank">italicized</a>.</li>
+            </ul>
+            <p id="font-practice">Hi, my name is <strong>Arial</strong>. I'm <strong>16</strong> and my favorite color is <strong>green</strong>.</p>
+            <img src="font-practice.png">
+        </div>
+        <hr>
+
+        <div class="container">
+            <h2>Links</h2>
+            <p>Alright smarty pants, if you've made it this far, you've realized that you're getting less and less help. So for this next one, you're on your own.</p>
+            <p>Style the link below (it doesn't go anywhere) so that it is:</p>
+            <ul>
+                <li>green by default</li>
+                <li>red when you hover over it</li>
+                <li>blue when you click on it</li>
+                <li>black when it's already been clicked on</li>
+            </ul>
+            <a href="">Nanny nanny boo-boo!</a>
+        </div>
+        <hr>
+
+        <div class="container">
+            <h2>Bonus</h2>
+            <p>Hooray! You've learned and practiced the basics of styling with CSS!</p>
+            <p>This last portion is a chance for you to just play.</p>
+            <p>Use resources like </p>
+            <ul>
+                <li><a href="http://www.tutorialrepublic.com/css-tutorial/css-introduction.php" target="_blank">Tutorial Republic</a></li>
+                <li><a href="http://www.w3schools.com/css/default.asp" target="_blank">w3schools</a></li>
+            </ul>
+            <p>to help you style things such as:</p>
+            <ul>
+                <li>the lists</li>
+                <li>the background of the containers</li>
+                <li>anything you want!</li>
+            </ul>
+            <p>You have permission to write any HTML below that you'd like to practice on:</p>
+            <!--Write any of your own HTML below-->
+
+
+
+
+
+            <!--Write any of your own HTML above-->
+        </div>
+        <hr>
+
+    </div>
+</body>
+
+</html>
