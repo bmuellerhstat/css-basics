@@ -19,6 +19,7 @@ Observe the files in this repo:
 * When you are finished, the preview should look like `result.png`.
 * Beautify your code.  
   * _NOTE: the cloud9 keyboard shortcut is_ `⌘+shift+B`
-* Mirror your `master` branch with a `gh-pages` branch and `push`.
 
-Good luck!
+## Done and Done
+
+Make sure you `add`/`commit`/`push` and change your repo's settings to use the `master` branch for **gh-pages**.  Make sure you test the URL!
