@@ -1,6 +1,6 @@
 # CSS Basics
 ---
-_The purpose of this repository is to help you practice using basic CSS properties._
+_The purpose of this repository is to help you practice using basic CSS(Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.) properties._
 
 ## Before you begin
 Observe the files in this repo:  
